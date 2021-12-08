@@ -5,6 +5,8 @@ import DesignsForEveryone from "./DesignsForEveryone/DesignsForEveryone"
 import GetInstantDesign from "./GetInstantDesign/GetInstantDesign"
 import NavBar from "../NavBar/NavBar"
 import OldAndNewWay from "./OldAndNewWay/OldAndNewWay"
+import Recognition from "./Recognition/Recognition"
+import Footer from "../Footer/Footer"
 
 const HomeIndex = () => {
   return (
@@ -34,6 +36,8 @@ const HomeIndex = () => {
         para1={"No more sifting through design templates."}
         para2={" Sivi generates unique and stunning graphics for your content."}
       />
+      <Recognition />
+      <Footer />
     </div>
   )
 }

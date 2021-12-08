@@ -6,6 +6,9 @@ export const Heading = styled.div`
   font-size: 36px;
   line-height: 41px;
   text-align: center;
+  @media screen and (max-width: 1279px) {
+    font-size: calc(1vw + 1rem);
+  }
 `
 
 export const SubHeading = styled.div`
