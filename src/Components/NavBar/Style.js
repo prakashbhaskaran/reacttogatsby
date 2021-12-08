@@ -21,10 +21,11 @@ export const PageLinkAndBtnContainer = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
-  max-height: ${props => (props.click ? "400px" : "0px")};
-  transition: max-height 1.5s ease;
-  overflow: hidden;
+
   @media screen and (max-width: 978px) {
+    max-height: ${props => (props.click ? "400px" : "0px")};
+    transition: max-height 1.5s ease;
+    overflow: hidden;
     top: 90px;
     position: absolute;
     flex-direction: column;
