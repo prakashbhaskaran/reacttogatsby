@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
-export const Container = styled.div``
+export const Container = styled.div`
+  margin-top: 20px;
+`
 
 export const Heading = styled.div`
   color: white;
@@ -16,8 +18,11 @@ export const Os = styled.div`
 
 export const OSitem = styled.div``
 
-export const Img = styled.div``
+export const Img = styled.div`
+  text-align: center;
+`
 
 export const Name = styled.div`
   color: white;
+  text-align: center;
 `

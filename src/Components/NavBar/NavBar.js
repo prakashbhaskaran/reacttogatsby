@@ -1,13 +1,13 @@
 import React from "react"
 import {
-  NavContainer,
-  NavLogo,
-  NavPageLinks,
+  Container,
+  Logo,
+  PageLinks,
   NavLink,
-  NavGetDesignBtn,
-  NavLinks,
-  NavBtn,
-  NavPageLinkAndBtnContainer,
+  GetDesignBtn,
+  Links,
+  Btn,
+  PageLinkAndBtnContainer,
 
   link,
 } from "./Style"
@@ -17,15 +17,15 @@ import MascotLogo from "../../../static/svg/MascotLogo"
 import { Link } from "gatsby"
 const NavBar = () => {
   return (
-    <NavContainer>
+    <Container>
       
-        <NavLogo>
+        <Logo>
           <MascotLogo />
-        </NavLogo>
+        </Logo>
       
-      <NavPageLinkAndBtnContainer>
-        <NavPageLinks>
-          <NavLinks>
+      <PageLinkAndBtnContainer>
+        <PageLinks>
+          <Links>
             <NavLink>
               <Link to="/" style={link}>
                 Home
@@ -51,13 +51,13 @@ const NavBar = () => {
                 Blog
               </Link>
             </NavLink>
-          </NavLinks>
-        </NavPageLinks>
-        <NavBtn>
-          <NavGetDesignBtn>Get Designs</NavGetDesignBtn>
-        </NavBtn>
-      </NavPageLinkAndBtnContainer>
-    </NavContainer>
+          </Links>
+        </PageLinks>
+        <Btn>
+          <GetDesignBtn>Get Designs</GetDesignBtn>
+        </Btn>
+      </PageLinkAndBtnContainer>
+    </Container>
   )
 }
 

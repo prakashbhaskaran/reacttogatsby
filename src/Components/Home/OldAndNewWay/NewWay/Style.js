@@ -27,6 +27,10 @@ export const NewContent = styled.div`
 export const Img = styled.div`
   width: 480px;
   height: 410px;
+  @media screen and (max-width: 978px) {
+    width: auto;
+    height: auto;
+  }
 `
 export const FeaturePoints = styled.div`
   display: flex;

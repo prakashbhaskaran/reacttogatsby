@@ -22,6 +22,10 @@ export const Content = styled.div``
 export const ContentImg = styled.div`
   width: 455px;
   height: 390px;
+  @media screen and (max-width: 978px) {
+    width: auto;
+    height: auto;
+  }
 `
 export const ContentText = styled.div`
   text-align: center;
