@@ -21,25 +21,31 @@ export const PageLinkAndBtnContainer = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
-
+  max-height: ${props => (props.click ? "400px" : "0px")};
+  transition: max-height 1.5s ease;
+  overflow: hidden;
   @media screen and (max-width: 978px) {
     top: 90px;
     position: absolute;
     flex-direction: column;
-    width: 80vw;
+    width: 85vw;
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    padding: 20px;
+
     align-items: flex-start;
     box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-    border-top: 3px solid #1882d0;
   }
 `
+
 export const PageLinks = styled.div`
   width: 100%;
+  @media screen and (max-width: 978px) {
+    border-top: 3px solid #1882d0;
+    padding: 10px 20px 20px 20px;
+  }
 `
 export const Links = styled.ul`
   display: flex;
@@ -58,7 +64,6 @@ export const NavLink = styled.li`
 
   @media screen and (max-width: 978px) {
     border-bottom: 1px solid silver;
-    height: 40px;
 
     padding: 10px;
     :hover {
@@ -73,6 +78,9 @@ export const link = {
 
 export const Btn = styled.div`
   padding: 10px;
+  @media screen and (max-width: 978px) {
+    display: none;
+  }
 `
 export const GetDesignBtn = styled.button`
   font-size: 14px;
@@ -104,23 +112,11 @@ export const GetDesignBtn = styled.button`
     );
     color: white;
   }
-  @media screen and (max-width: 978px) {
-    font-size: 14px;
-    color: initial;
-    outline: none;
-    border-radius: initial;
-    border: hidden;
-    background: initial;
-    background-origin: none;
-    background-clip: none;
-    text-align: left;
-    cursor: pointer;
-    height: initial;
-    width: 100%;
+`
 
-    :hover {
-      background: initial;
-      color: #1882d0;
-    }
+export const Icon = styled.div`
+  display: none;
+  @media screen and (max-width: 978px) {
+    display: initial;
   }
 `
