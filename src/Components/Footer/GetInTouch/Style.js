@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+
   gap: 24px;
 `
 export const Heading = styled.div`
@@ -20,6 +21,7 @@ export const SubHeading = styled.div`
 
 export const Social = styled.div`
   display: flex;
+
   gap: 10px;
 `
 

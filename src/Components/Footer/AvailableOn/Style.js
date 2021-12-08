@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  margin-top: 20px;
+  margin-top: 80px;
 `
 
 export const Heading = styled.div`
@@ -14,6 +14,7 @@ export const Os = styled.div`
   display: flex;
   margin-top: 30px;
   gap: 50px;
+  flex-wrap: wrap;
 `
 
 export const OSitem = styled.div``

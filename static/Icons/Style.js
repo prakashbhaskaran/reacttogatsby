@@ -8,4 +8,8 @@ export const Line = styled.div`
   background-color: black;
   margin: 6px 0;
   cursor: pointer;
+  @media screen and (max-width:768px){
+    width: 20px;
+  height: 2px;
+  }
 `

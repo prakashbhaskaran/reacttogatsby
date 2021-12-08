@@ -10,7 +10,6 @@ import {
   PageLinkAndBtnContainer,
   link,
   Icon,
-
 } from "./Style"
 
 import MascotLogo from "../../../static/svg/MascotLogo"
@@ -23,52 +22,44 @@ const NavBar = () => {
     if (click === false) setClick(true)
     else setClick(false)
   }
+
+  const links = [
+    { url: "/home", name: "Home" },
+    { url: "/howitworks", name: "How It Works" },
+    { url: "/tour", name: "Tour" },
+    { url: "/team", name: "Team" },
+    { url: "/blog", name: "Blog" },
+    { url: "/getdesigns", name: "Get Designs" },
+  ]
   return (
     <Container>
       <Logo>
         <MascotLogo />
       </Logo>
-     
-        <PageLinkAndBtnContainer click={click}>
-          <PageLinks>
-            <Links>
-              <NavLink>
-                <Link to="/" style={link}>
-                  Home
-                </Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/" style={link}>
-                  How It Works
-                </Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/" style={link}>
-                  Tour
-                </Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/" style={link}>
-                  Team
-                </Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/" style={link}>
-                  Blog
-                </Link>
-              </NavLink>
-              <NavLink>
-                <Link to="/" style={link}>
-                Get Designs
-                </Link>
-              </NavLink>
-            </Links>
-          </PageLinks>
-          <Btn>
-            <GetDesignBtn>Get Designs</GetDesignBtn>
-          </Btn>
-        </PageLinkAndBtnContainer>
-      
+
+      <PageLinkAndBtnContainer click={click}>
+        <PageLinks>
+          <Links>
+            {links.map((item, i) => {
+              return (
+                <NavLink key={i} id={i}>
+                  <Link to={item.url} style={link}>
+                    {item.name}
+                  </Link>
+                </NavLink>
+              )
+            })}
+          </Links>
+        </PageLinks>
+        <Btn>
+          <GetDesignBtn>
+            <Link to="/getdesigns" style={link}>
+              Get Designs
+            </Link>
+          </GetDesignBtn>
+        </Btn>
+      </PageLinkAndBtnContainer>
+
       <Icon onClick={handleClick}>
         <HamBurger />
       </Icon>

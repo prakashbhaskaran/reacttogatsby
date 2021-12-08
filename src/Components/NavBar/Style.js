@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 15px 45px;
+  padding: 0px 40px;
   align-items: center;
   position: sticky;
   top: 0;
@@ -11,6 +11,9 @@ export const Container = styled.div`
   width: 100%;
   z-index: 1;
   height: 91px;
+  @media screen and (max-width: 360px) {
+    padding: 0px 20px;
+  }
 `
 export const Logo = styled.div`
   width: 175px;
@@ -29,7 +32,7 @@ export const PageLinkAndBtnContainer = styled.div`
     top: 90px;
     position: absolute;
     flex-direction: column;
-    width: 85vw;
+    width: calc(100vw - 80px);
     left: 50%;
     transform: translateX(-50%);
     background: white;
@@ -38,6 +41,9 @@ export const PageLinkAndBtnContainer = styled.div`
     box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  }
+  @media screen and (max-width: 360px) {
+    width: calc(100vw - 40px);
   }
 `
 
@@ -62,9 +68,10 @@ export const NavLink = styled.li`
   list-style: none;
   font-size: 14px;
   font-weight: 400;
-
+  display: ${props => (props.id === 5 ? "none" : "initial")};
   @media screen and (max-width: 978px) {
     border-bottom: 1px solid silver;
+    display: ${props => (props.id ? "initial" : "none")};
 
     padding: 10px;
     :hover {
@@ -102,7 +109,7 @@ export const GetDesignBtn = styled.button`
   height: 40px;
   width: 110px;
   cursor: pointer;
-
+  transition: all 0.3s ease;
   :hover {
     background: linear-gradient(
       to right,
@@ -117,6 +124,7 @@ export const GetDesignBtn = styled.button`
 
 export const Icon = styled.div`
   display: none;
+  cursor: pointer;
   @media screen and (max-width: 978px) {
     display: initial;
   }

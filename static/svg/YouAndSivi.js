@@ -4,8 +4,8 @@ const YouAndSivi = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="215"
-      height="117"
+      width="100%"
+      height="100%"
       viewBox="0 0 215 117"
       fill="none"
     >

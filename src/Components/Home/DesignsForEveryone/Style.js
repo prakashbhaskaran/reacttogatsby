@@ -3,6 +3,9 @@ import styled from "styled-components"
 export const Container = styled.div`
   position: relative;
   padding: 120px 85px;
+  @media screen and (max-width: 768px) {
+    padding: 60px 45px;
+  }
 `
 
 export const Heading = styled.div`
@@ -25,6 +28,13 @@ export const Logo = styled.div`
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
+  width: 215px;
+  height: 116.52px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    top: -30px;
+    height: 60.52px;
+  }
 `
 export const CardWrapper = styled.div`
   display: flex;

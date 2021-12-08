@@ -22,7 +22,7 @@ const HomeIndex = () => {
       <PageDivider
         para1={"In a world full of distraction, grabbing attention is key."}
         para2={"A great way to do so is by creating visuals that stand out."}
-        pad={"Yes"}
+        pad={true}
       />
       <DesignsForEveryone />
       <PageDivider

@@ -8,6 +8,8 @@ import {
   Heading,
   SubHeading,
   Features,
+  Blob1,
+  Blob2,
 } from "./Style"
 import Card from "./Card/Card"
 
@@ -38,6 +40,8 @@ const GetInstantDesign = () => {
 
   return (
     <Container>
+      <Blob1 src="/homeblob/blob.png" alt=""></Blob1>
+      <Blob2 src="/homeblob/blob2.png"  alt=""></Blob2>
       <HeadAndBtn>
         <Heading>Generate instant graphic designs.</Heading>
 

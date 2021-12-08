@@ -10,6 +10,10 @@ export const Container = styled.div`
 
   text-align: center;
   line-height: 42px;
+  padding: ${props => (!props.pad ? "60px 120px" : "60px 120px 90px 120px")};
+  @media screen and (max-width: 768px) {
+    padding: 60px 45px;
+  }
 `
 export const Para1 = styled.p`
   color: #333333;

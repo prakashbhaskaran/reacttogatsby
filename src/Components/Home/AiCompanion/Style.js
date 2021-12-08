@@ -9,6 +9,9 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 60px;
   }
+  @media screen and (max-width: 768px) {
+    padding: 60px 45px;
+  }
 `
 
 export const Logo = styled.div`

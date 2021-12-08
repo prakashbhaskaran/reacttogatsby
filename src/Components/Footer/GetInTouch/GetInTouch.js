@@ -14,14 +14,15 @@ const GetInTouch = () => {
       <Heading>Get in touch</Heading>
       <SubHeading>Email: info@hellosivi.com</SubHeading>
       <Social>
-          {socialmedias.map((item,i)=>{
-              return <Media key={i}>
+        {socialmedias.map((item, i) => {
+          return (
+            <Media key={i}>
               <Link to={item.url}>
-                <img src={item.img} alt="" />
+                <img src={item.img} width="100%" height="100%" alt="" />
               </Link>
             </Media>
-          })}
-        
+          )
+        })}
       </Social>
     </Container>
   )
