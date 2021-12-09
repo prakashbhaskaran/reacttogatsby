@@ -7,7 +7,7 @@ import { Container } from "./Style"
 
 const Footer = () => {
   return (
-    <Container>
+    <Container> 
       <AvailableOn />
       <HowItWorks />
       <GetDesign />

@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
 
   @media screen and (max-width: 978px) {

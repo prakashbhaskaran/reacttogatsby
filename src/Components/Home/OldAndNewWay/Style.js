@@ -8,6 +8,9 @@ export const Container = styled.div`
   @media screen and (max-width: 1279px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 768px) {
+    padding: 60px 45px;
+  }
 `
 export const DashLine = styled.div`
   border-right: 2px dashed #cad7e0;

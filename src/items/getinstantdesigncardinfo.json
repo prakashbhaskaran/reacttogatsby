@@ -1,0 +1,23 @@
+[
+  {
+    "cname": "Advertisements",
+    "img": "/getinstantdesignimg/advertisement.png"
+  },
+  { "cname": "Marketing", "img": "/getinstantdesignimg/Marketing.png" },
+  {
+    "cname": "Website Content",
+    "img": "/getinstantdesignimg/webcontent.png"
+  },
+  {
+    "cname": "Social Posts",
+    "img": "/getinstantdesignimg/socialpost.png"
+  },
+  {
+    "cname": "Product Banners",
+    "img": "/getinstantdesignimg/banners.png"
+  },
+  {
+    "cname": "Newsletters",
+    "img": "/getinstantdesignimg/newsletters.png"
+  }
+]

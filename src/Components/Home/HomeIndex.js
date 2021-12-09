@@ -8,7 +8,7 @@ import OldAndNewWay from "./OldAndNewWay/OldAndNewWay"
 import Recognition from "./Recognition/Recognition"
 import Footer from "../Footer/Footer"
 
-const HomeIndex = () => {
+const Home = () => {
   return (
     <div>
       <NavBar />
@@ -42,4 +42,4 @@ const HomeIndex = () => {
   )
 }
 
-export default HomeIndex
+export default Home

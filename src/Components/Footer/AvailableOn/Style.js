@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
-  margin-top: 80px;
-`
+export const Container = styled.div``
 
 export const Heading = styled.div`
   color: white;
   font-size: 24px;
   line-height: 29px;
+  margin-top: 80px;
 `
 
 export const Os = styled.div`

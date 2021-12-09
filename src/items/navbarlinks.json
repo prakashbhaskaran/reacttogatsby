@@ -1,0 +1,8 @@
+[
+  { "url": "/home", "name": "Home" },
+  { "url": "/howitworks", "name": "How It Works" },
+  { "url": "/tour", "name": "Tour" },
+  { "url": "/team", "name": "Team" },
+  { "url": "/blog", "name": "Blog" },
+  { "url": "/getdesigns", "name": "Get Designs" }
+]

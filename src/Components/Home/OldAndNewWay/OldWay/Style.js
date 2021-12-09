@@ -27,8 +27,19 @@ export const OldContent = styled.div`
   @media screen and (max-width: 1279px) {
     flex-direction: column;
   }
+  @media screen and (max-width: 768px) {
+    gap: 30px;
+  }
 `
 
-export const Img = styled.div``
+export const Img = styled.div`
+  width: 200px;
+  height: 143.46px;
+  @media screen and (max-width: 768px) {
+    padding: 60px 45px;
+    width: auto;
+    height: auto;
+  }
+`
 
 export const Para = styled.p``

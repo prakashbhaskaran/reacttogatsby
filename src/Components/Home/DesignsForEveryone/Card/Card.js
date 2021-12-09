@@ -12,7 +12,7 @@ const Card = ({ heading, question, answer, img }) => {
   return (
     <CardContainer>
       <CardImg>
-        <img src={img} alt="" />
+        <img src={img} alt="" width="100%" height="100%"/>
       </CardImg>
       <CardWrapper>
         <CardHeading>{heading}</CardHeading>

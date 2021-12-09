@@ -19,4 +19,9 @@ export const Btn = styled.button`
   outline: none;
   border: 1px solid white;
   border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  :hover {
+    color: black;
+  }
 `

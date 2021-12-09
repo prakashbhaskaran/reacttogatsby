@@ -1,6 +1,6 @@
 import React from "react"
 import Images from "./Images/Images"
-
+import { graphql, useStaticQuery } from "gatsby"
 import {
   Btn,
   Container,
@@ -14,34 +14,22 @@ import {
 import Card from "./Card/Card"
 
 const GetInstantDesign = () => {
-  const cardInfo = [
+  const data = useStaticQuery(graphql`
     {
-      cname: "Advertisements",
-      img: "/getinstantdesignimg/advertisement.png",
-    },
-    { cname: "Marketing", img: "/getinstantdesignimg/Marketing.png" },
-    {
-      cname: "Website Content",
-      img: "/getinstantdesignimg/webcontent.png",
-    },
-    {
-      cname: "Social Posts",
-      img: "/getinstantdesignimg/socialpost.png",
-    },
-    {
-      cname: "Product Banners",
-      img: "/getinstantdesignimg/banners.png",
-    },
-    {
-      cname: "Newsletters",
-      img: "/getinstantdesignimg/newsletters.png",
-    },
-  ]
+      allGetinstantdesigncardinfoJson {
+        nodes {
+          cname
+          img
+        }
+      }
+    }
+  `)
+  const cardInfo = data.allGetinstantdesigncardinfoJson.nodes
 
   return (
     <Container>
       <Blob1 src="/homeblob/blob.png" alt=""></Blob1>
-      <Blob2 src="/homeblob/blob2.png"  alt=""></Blob2>
+      <Blob2 src="/homeblob/blob2.png" alt=""></Blob2>
       <HeadAndBtn>
         <Heading>Generate instant graphic designs.</Heading>
 

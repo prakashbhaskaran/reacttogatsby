@@ -15,6 +15,9 @@ export const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 360px) {
+    height: 260px;
+  }
 `
 
 export const CardWrapper = styled.div`
@@ -50,4 +53,12 @@ export const CardImg = styled.div`
   top: -25%;
   left: 50%;
   transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+
+  @media screen and (max-width: 360px) {
+    width: 80px;
+    height: 80px;
+    top: -20%;
+  }
 `

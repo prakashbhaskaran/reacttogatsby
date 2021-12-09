@@ -69,14 +69,14 @@ export const NavLink = styled.li`
   font-size: 14px;
   font-weight: 400;
   display: ${props => (props.id === 5 ? "none" : "initial")};
+  :hover {
+    color: #1882d0;
+  }
   @media screen and (max-width: 978px) {
     border-bottom: 1px solid silver;
     display: ${props => (props.id ? "initial" : "none")};
 
     padding: 10px;
-    :hover {
-      color: #1882d0;
-    }
   }
 `
 export const link = {

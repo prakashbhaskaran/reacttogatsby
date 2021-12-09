@@ -1,6 +1,7 @@
 import React from "react"
 import Tick from "../../../../../static/svg/Tick"
 import { Point, TickSymbol } from "../../AiCompanion/Style"
+import { graphql, useStaticQuery } from "gatsby"
 import {
   Container,
   FeaturePoints,
@@ -11,12 +12,16 @@ import {
 } from "./Style"
 
 const NewWay = () => {
-  const features = [
-    { content: "Generate designs" },
-    { content: "For your content" },
-    { content: "In your brand style" },
-    { content: "Within a minute!" },
-  ]
+  const data = useStaticQuery(graphql`
+    {
+      allNewwayJson {
+        nodes {
+          content
+        }
+      }
+    }
+  `)
+  const features = data.allNewwayJson.nodes
   return (
     <Container>
       <Heading>The All New Sivi Way</Heading>

@@ -1,13 +1,20 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Card from "./Card/Card"
 import { Cards, Container, Heading } from "./Style"
 
 const Recognition = () => {
-  const cardInfo = [
-    { img: "/recognitions/recog1.png", cname: "NASSCOM 10k Startups" },
-    { img: "/recognitions/recog2.png", cname: "Top 5 NTLF Super Startups" },
-    { img: "/recognitions/recog3.png", cname: "One of KTech Elevate Winners" },
-  ]
+  const data = useStaticQuery(graphql`
+    {
+      allRecognitioncardinfoJson {
+        nodes {
+          img
+          cname
+        }
+      }
+    }
+  `)
+  const cardInfo = data.allRecognitioncardinfoJson.nodes
   return (
     <Container>
       <Heading>Recognitions</Heading>

@@ -1,3 +1,4 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import SiviLogo from "../../../../static/svg/SiviLogo"
 import Tick from "../../../../static/svg/Tick"
@@ -14,16 +15,23 @@ import {
   TickSymbol,
 } from "./Style"
 const AiCompanion = () => {
-  const leftpoints = [
-    { point: "Original, template-free designs" },
-    { point: "High conversion rates" },
-    { point: "Faster turn-around time" },
-  ]
-  const rightpoints = [
-    { point: "No co-ordination hassle" },
-    { point: "Multiple design options" },
-    { point: "At a fraction of the cost" },
-  ]
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allLeftpointsJson {
+        nodes {
+          point
+        }
+      }
+      allRightpointsJson {
+        nodes {
+          point
+        }
+      }
+    }
+  `)
+  const leftpoints = data.allLeftpointsJson.nodes
+  const rightpoints = data.allRightpointsJson.nodes
+
   return (
     <Container>
       <Logo>
@@ -68,3 +76,4 @@ const AiCompanion = () => {
 }
 
 export default AiCompanion
+

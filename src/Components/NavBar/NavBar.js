@@ -14,23 +14,27 @@ import {
 
 import MascotLogo from "../../../static/svg/MascotLogo"
 
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import HamBurger from "../../../static/Icons/HamBurger"
 const NavBar = () => {
   const [click, setClick] = useState(false)
+  const data = useStaticQuery(graphql`
+    {
+      allNavbarlinksJson {
+        nodes {
+          name
+          url
+        }
+      }
+    }
+  `)
+
   const handleClick = () => {
     if (click === false) setClick(true)
     else setClick(false)
   }
 
-  const links = [
-    { url: "/home", name: "Home" },
-    { url: "/howitworks", name: "How It Works" },
-    { url: "/tour", name: "Tour" },
-    { url: "/team", name: "Team" },
-    { url: "/blog", name: "Blog" },
-    { url: "/getdesigns", name: "Get Designs" },
-  ]
+  const links = data.allNavbarlinksJson.nodes
   return (
     <Container>
       <Logo>
