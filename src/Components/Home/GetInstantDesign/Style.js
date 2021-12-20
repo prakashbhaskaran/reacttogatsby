@@ -1,13 +1,19 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  padding: 120px 85px;
-  position: relative;
-  @media screen and (max-width: 768px) {
-    padding: 60px 45px;
-  }
+  background-image: url("/homeblob/homebg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 `
 
+export const Wrapper = styled.div`
+  padding: 120px 0;
+  width: 1080px;
+  margin: auto;
+  @media screen and (max-width: 1079px) {
+    width: 90%;
+  }
+`
 export const HeadAndBtn = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,8 +28,8 @@ export const Heading = styled.div`
   font-size: 52px;
   line-height: 63px;
   color: #000000;
-  @media screen and (max-width: 1279px) {
-    font-size: calc(1vw + 1rem);
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
   }
 `
 
@@ -31,10 +37,8 @@ export const SubHeading = styled.div`
   font-size: 20px;
   line-height: 30px;
   color: #333333;
-  width: 870px;
-  @media screen and (max-width: 1279px) {
-    width: initial;
-    font-size: 16px;
+  width: 80%;
+  @media screen and (max-width: 979px) {
   }
 `
 
@@ -72,19 +76,4 @@ export const Features = styled.div`
   gap: 20px;
   margin-top: 100px;
   flex-wrap: wrap;
-`
-export const Blob1 = styled.img`
-  position: absolute;
-  right: 0;
-  top: 5px;
-  opacity: 0.7;
-  z-index: -1;
-`
-export const Blob2 = styled.img`
-  position: absolute;
-  left: 0;
-  top: 5px;
-  opacity: 0.7;
-  top: 25%;
-  z-index: -1;
 `

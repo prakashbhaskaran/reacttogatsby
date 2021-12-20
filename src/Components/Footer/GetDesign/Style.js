@@ -1,13 +1,16 @@
 import styled from "styled-components"
 
-export const Container = styled.div``
+export const Container = styled.div`
+  width: 152px;
+  height: 125px;
+ 
+`
 
 export const Para = styled.p`
   color: white;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  width: 152px;
 `
 
 export const Btn = styled.button`

@@ -7,9 +7,11 @@ export const List = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  width: 200px;
+  height: 128px;
 `
 
-export const Links = styled.div`
+export const Links = styled.p`
   color: white;
   font-weight: 300;
   font-size: 14px;

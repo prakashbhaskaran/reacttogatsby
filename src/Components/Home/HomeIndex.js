@@ -7,10 +7,10 @@ import NavBar from "../NavBar/NavBar"
 import OldAndNewWay from "./OldAndNewWay/OldAndNewWay"
 import Recognition from "./Recognition/Recognition"
 import Footer from "../Footer/Footer"
-
+import { Container } from "./style"
 const Home = () => {
   return (
-    <div>
+    <Container>
       <NavBar />
       <GetInstantDesign />
       <PageDivider
@@ -38,7 +38,7 @@ const Home = () => {
       />
       <Recognition />
       <Footer />
-    </div>
+    </Container>
   )
 }
 

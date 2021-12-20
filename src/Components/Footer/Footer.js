@@ -3,15 +3,28 @@ import AvailableOn from "./AvailableOn/AvailableOn"
 import GetDesign from "./GetDesign/GetDesign"
 import GetInTouch from "./GetInTouch/GetInTouch"
 import HowItWorks from "./HowItWorks/HowItWorks"
-import { Container } from "./Style"
+import {
+  Container,
+  Wrapper,
+  AvailAndHow,
+  DesignAndTouch,
+  CopyRight,
+} from "./Style"
 
 const Footer = () => {
   return (
-    <Container> 
-      <AvailableOn />
-      <HowItWorks />
-      <GetDesign />
-      <GetInTouch />
+    <Container>
+      <Wrapper>
+        <AvailAndHow>
+          <AvailableOn />
+          <HowItWorks />
+        </AvailAndHow>
+        <DesignAndTouch>
+          <GetDesign />
+          <GetInTouch />
+        </DesignAndTouch>
+      </Wrapper>
+      <CopyRight>Copyright © 2020-21 HelloSivi</CopyRight>
     </Container>
   )
 }

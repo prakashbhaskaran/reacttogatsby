@@ -6,9 +6,6 @@ export const Heading = styled.div`
   font-size: 36px;
   line-height: 41px;
   text-align: center;
-  @media screen and (max-width: 1279px) {
-    font-size: calc(1vw + 1rem);
-  }
 `
 
 export const SubHeading = styled.div`
@@ -27,9 +24,12 @@ export const NewContent = styled.div`
 export const Img = styled.div`
   width: 480px;
   height: 410px;
-  @media screen and (max-width: 978px) {
-    width: auto;
+  @media screen and (max-width: 1279px) {
+    width: 340px;
     height: auto;
+  }
+  @media screen and (max-width: 560px) {
+    width: 200px;
   }
 `
 export const FeaturePoints = styled.div`

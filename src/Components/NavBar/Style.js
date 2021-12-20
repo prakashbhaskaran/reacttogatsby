@@ -5,8 +5,8 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 0px 40px;
   align-items: center;
-  position: sticky;
   top: 0;
+  position: fixed;
   background-color: white;
   width: 100%;
   z-index: 1;
@@ -18,6 +18,10 @@ export const Container = styled.div`
 export const Logo = styled.div`
   width: 175px;
   height: 60px;
+  @media screen and (max-width: 360px) {
+    width: 150px;
+    height: 55px;
+  }
 `
 
 export const PageLinkAndBtnContainer = styled.div`

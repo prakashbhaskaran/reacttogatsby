@@ -8,8 +8,7 @@ import {
   Heading,
   SubHeading,
   Features,
-  Blob1,
-  Blob2,
+  Wrapper,
 } from "./Style"
 import Card from "./Card/Card"
 
@@ -28,25 +27,25 @@ const GetInstantDesign = () => {
 
   return (
     <Container>
-      <Blob1 src="/homeblob/blob.png" alt=""></Blob1>
-      <Blob2 src="/homeblob/blob2.png" alt=""></Blob2>
-      <HeadAndBtn>
-        <Heading>Generate instant graphic designs.</Heading>
+      <Wrapper>
+        <HeadAndBtn>
+          <Heading>Generate instant graphic designs.</Heading>
 
-        <SubHeading>
-          Instantly convert your text content into visual designs for your
-          campaigns, product banners, website content, ads, email newsletters,
-          and more in 1/100th of the time and cost.
-        </SubHeading>
+          <SubHeading>
+            Instantly convert your text content into visual designs for your
+            campaigns, product banners, website content, ads, email newsletters,
+            and more in 1/100th of the time and cost.
+          </SubHeading>
 
-        <Btn>Get Instant Designs</Btn>
-      </HeadAndBtn>
-      <Images />
-      <Features>
-        {cardInfo.map((card, i) => {
-          return <Card key={i} cname={card.cname} img={`${card.img}`} />
-        })}
-      </Features>
+          <Btn>Get Instant Designs</Btn>
+        </HeadAndBtn>
+        <Images />
+        <Features>
+          {cardInfo.map((card, i) => {
+            return <Card key={i} cname={card.cname} img={`${card.img}`} />
+          })}
+        </Features>
+      </Wrapper>
     </Container>
   )
 }

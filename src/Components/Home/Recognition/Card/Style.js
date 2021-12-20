@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const Container = styled.div`
   height: 110px;
   width: 230px;
+  @media screen and (max-width: 320px) {
+    width: 100%;
+    padding: 0px 20px;
+  }
 `
 export const ImgContainer = styled.div`
   background: linear-gradient(
@@ -16,6 +20,7 @@ export const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 9px;
 `
 export const Img = styled.div``
 

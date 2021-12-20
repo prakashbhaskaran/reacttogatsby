@@ -6,9 +6,6 @@ export const Heading = styled.div`
   font-size: 36px;
   line-height: 41px;
   text-align: center;
-  @media screen and (max-width: 1279px) {
-    font-size: calc(1vw + 1rem);
-  }
 `
 
 export const SubHeading = styled.div`
@@ -27,8 +24,8 @@ export const OldContent = styled.div`
   @media screen and (max-width: 1279px) {
     flex-direction: column;
   }
-  @media screen and (max-width: 768px) {
-    gap: 30px;
+  @media screen and (max-width: 978px) {
+    margin-top: 100px;
   }
 `
 
@@ -36,9 +33,6 @@ export const Img = styled.div`
   width: 200px;
   height: 143.46px;
   @media screen and (max-width: 768px) {
-    padding: 60px 45px;
-    width: auto;
-    height: auto;
   }
 `
 

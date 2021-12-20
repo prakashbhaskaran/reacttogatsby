@@ -2,15 +2,19 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
 
-  padding: 120px 85px;
+  margin: auto;
+  width: 1080px;
+  padding: 120px 0;
   @media screen and (max-width: 1279px) {
-    flex-direction: column;
     gap: 60px;
+    width: 90%;
   }
-  @media screen and (max-width: 768px) {
-    padding: 60px 45px;
+  @media screen and (max-width: 979px) {
+    padding: 120px 30px;
+    align-items: center;
+    flex-direction: column;
   }
 `
 
@@ -19,7 +23,7 @@ export const Logo = styled.div`
   text-align: center;
   width: 422px;
   height: 392px;
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 560px) {
     width: auto;
     height: auto;
   }
@@ -37,9 +41,6 @@ export const Heading = styled.div`
   color: #333333;
   font-size: 36px;
   line-height: 41px;
-  @media screen and (max-width: 1279px) {
-    font-size: calc(1vw + 1rem);
-  }
 `
 
 export const SubHeading = styled.div`
