@@ -8,13 +8,12 @@ import {
   Links,
   Btn,
   PageLinkAndBtnContainer,
-  link,
   Icon,
 } from "./Style"
 
 import MascotLogo from "../../../static/svg/MascotLogo"
 
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import HamBurger from "../../../static/Icons/HamBurger"
 const NavBar = () => {
   const [click, setClick] = useState(false)
@@ -46,10 +45,8 @@ const NavBar = () => {
           <Links>
             {links.map((item, i) => {
               return (
-                <NavLink key={i} id={i}>
-                  <Link to={item.url} style={link}>
-                    {item.name}
-                  </Link>
+                <NavLink key={i} id={i} to={item.url}>
+                  {item.name}
                 </NavLink>
               )
             })}
@@ -57,9 +54,7 @@ const NavBar = () => {
         </PageLinks>
         <Btn>
           <GetDesignBtn>
-            <Link to="/getdesigns" style={link}>
-              Get Designs
-            </Link>
+            <NavLink to="/getdesigns">Get Designs</NavLink>
           </GetDesignBtn>
         </Btn>
       </PageLinkAndBtnContainer>

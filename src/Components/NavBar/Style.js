@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -31,7 +32,7 @@ export const PageLinkAndBtnContainer = styled.div`
 
   @media screen and (max-width: 978px) {
     max-height: ${props => (props.click ? "400px" : "0px")};
-    transition: max-height 1.5s ease;
+    transition: max-height 1.4s ease;
     overflow: hidden;
     top: 90px;
     position: absolute;
@@ -55,7 +56,7 @@ export const PageLinks = styled.div`
   width: 100%;
   @media screen and (max-width: 978px) {
     border-top: 3px solid #1882d0;
-    padding: 10px 20px 20px 20px;
+    padding: 20px 30px 30px 30px;
   }
 `
 export const Links = styled.ul`
@@ -68,25 +69,27 @@ export const Links = styled.ul`
     gap: 0;
   }
 `
-export const NavLink = styled.li`
+export const NavLink = styled(Link)`
   list-style: none;
   font-size: 14px;
   font-weight: 400;
+  line-height: 2;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
   display: ${props => (props.id === 5 ? "none" : "initial")};
   :hover {
     color: #1882d0;
+    background: aliceblue;
+    opacity: 0.6;
   }
   @media screen and (max-width: 978px) {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     display: ${props => (props.id ? "initial" : "none")};
 
     padding: 10px;
   }
 `
-export const link = {
-  textDecoration: "inherit",
-  color: "inherit",
-}
 
 export const Btn = styled.div`
   padding: 10px;
