@@ -78,16 +78,20 @@ export const NavLink = styled(Link)`
   color: inherit;
   text-decoration: inherit;
   display: ${props => (props.id === 5 ? "none" : "initial")};
+  transition: all 0.3s ease;
   :hover {
     color: #1882d0;
-    background: aliceblue;
-    opacity: 0.6;
   }
   @media screen and (max-width: 978px) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     display: ${props => (props.id ? "initial" : "none")};
 
     padding: 10px;
+    :hover {
+      color: #1882d0;
+      background: aliceblue;
+      opacity: 0.6;
+    }
   }
 `
 
@@ -96,6 +100,11 @@ export const Btn = styled.div`
   @media screen and (max-width: 978px) {
     display: none;
   }
+`
+
+export const GetDesignLink = styled(Link)`
+  color: inherit;
+  text-decoration: inherit;
 `
 export const GetDesignBtn = styled.button`
   font-size: 14px;

@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Container = styled.div``
@@ -16,4 +17,8 @@ export const Links = styled.p`
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+`
+export const NavLink = styled(Link)`
+  color: inherit;
+  text-decoration: inherit;
 `

@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const Container = styled.div``
 
-export const Heading = styled.div`
+export const Heading = styled.p`
   font-size: 36px;
   line-height: 41px;
   text-align: center;
 `
 
-export const SubHeading = styled.div`
+export const SubHeading = styled.p`
   margin-top: 10px;
   font-size: 16px;
   line-height: 21px;

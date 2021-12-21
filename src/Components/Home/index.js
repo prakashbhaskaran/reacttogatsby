@@ -3,15 +3,15 @@ import PageDivider from "../PageDivider/PageDivider"
 import AiCompanion from "./AiCompanion/AiCompanion"
 import DesignsForEveryone from "./DesignsForEveryone/DesignsForEveryone"
 import GetInstantDesign from "./GetInstantDesign/GetInstantDesign"
-import NavBar from "../NavBar/NavBar"
+
 import OldAndNewWay from "./OldAndNewWay/OldAndNewWay"
 import Recognition from "./Recognition/Recognition"
-import Footer from "../Footer/Footer"
+
 import { Container } from "./style"
+
 const Home = () => {
   return (
     <Container>
-      <NavBar />
       <GetInstantDesign />
       <PageDivider
         para1={
@@ -37,7 +37,6 @@ const Home = () => {
         para2={" Sivi generates unique and stunning graphics for your content."}
       />
       <Recognition />
-      <Footer />
     </Container>
   )
 }

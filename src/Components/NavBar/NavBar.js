@@ -4,6 +4,7 @@ import {
   Logo,
   PageLinks,
   NavLink,
+  GetDesignLink,
   GetDesignBtn,
   Links,
   Btn,
@@ -54,7 +55,7 @@ const NavBar = () => {
         </PageLinks>
         <Btn>
           <GetDesignBtn>
-            <NavLink to="/getdesigns">Get Designs</NavLink>
+            <GetDesignLink to="/getdesigns">Get Designs</GetDesignLink>
           </GetDesignBtn>
         </Btn>
       </PageLinkAndBtnContainer>

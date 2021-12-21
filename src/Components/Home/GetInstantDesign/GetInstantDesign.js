@@ -2,7 +2,7 @@ import React from "react"
 import Images from "./Images/Images"
 import { graphql, useStaticQuery } from "gatsby"
 import {
-  Btn,
+ 
   Container,
   HeadAndBtn,
   Heading,
@@ -10,6 +10,7 @@ import {
   Features,
   Wrapper,
 } from "./Style"
+import { Btn } from "../../../utils/Button/GetDesign"
 import Card from "./Card/Card"
 
 const GetInstantDesign = () => {

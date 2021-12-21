@@ -1,7 +1,7 @@
-import { Link, graphql, useStaticQuery } from "gatsby"
+import {  graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { Container, Links, List } from "./Style"
-import { link } from "../../NavBar/Style"
+import { Container, Links, List,NavLink } from "./Style"
+
 const HowItWorks = () => {
   const data = useStaticQuery(graphql`
     {
@@ -20,9 +20,9 @@ const HowItWorks = () => {
         {links.map((item, i) => {
           return (
             <Links key={i}>
-              <Link to={`${item.url}`} style={link}>
+              <NavLink to={`${item.url}`} >
                 {item.name}
-              </Link>
+              </NavLink>
             </Links>
           )
         })}

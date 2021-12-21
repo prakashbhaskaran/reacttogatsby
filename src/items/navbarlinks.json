@@ -1,6 +1,6 @@
 [
-  { "url": "/home", "name": "Home" },
-  { "url": "/howitworks", "name": "How It Works" },
+  { "url": "/", "name": "Home" },
+  { "url": "/how-it-works", "name": "How It Works" },
   { "url": "/tour", "name": "Tour" },
   { "url": "/team", "name": "Team" },
   { "url": "/blog", "name": "Blog" },

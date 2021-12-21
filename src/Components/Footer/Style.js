@@ -5,6 +5,9 @@ export const Container = styled.div`
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 `
 export const Wrapper = styled.div`
   display: flex;
