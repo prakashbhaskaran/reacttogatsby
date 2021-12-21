@@ -6,5 +6,5 @@ export const Container = styled.div`
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
-  padding: 120px 0 220px 0;
+  padding: 160px 0 220px 0;
 `
