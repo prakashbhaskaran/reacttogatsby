@@ -1,0 +1,54 @@
+import React from "react"
+import {
+  Container,
+  Details,
+  Head,
+  Image,
+  ImageWrapper,
+  Para,
+  Wrapper,
+} from "./style"
+
+const Card = () => {
+  const data = [
+    {
+      img: "/tour/input-gathering.png",
+      head: "Gathers input like a human",
+      para: "   Sivi helps companies to unify the terminologies of a designer,content writer and marketer. A goal-based design approach gathers target audience, events, and other relevant information. It would reduce the design turn around time and enables hassle-free communication.",
+    },
+    {
+      img: "/tour/moodboard.png",
+      head: "Generates a planner to help define the concept",
+      para: "Collecting requirements for a design deliverable is monotonous, and it is not creative for most of the designers. Sivi helps you with a meaningful design brief, colours, typography, photographs, and so on. You’ll never waste your time on incorrect input.",
+    },
+    {
+      img: "/tour/assets.png",
+      head: "Curates stunning design assets to foster creativity",
+      para: "Sivi helps you create better-looking design elements by taking care of the tedious creation of backgrounds and icons, as well as adapting those assets to various devices.",
+    },
+    {
+      img: "/tour/designs.png",
+      head: "Designs like a pro",
+      para: "Graphic design is the art of combining words and images to convey a message. Sivi understands how these fundamental elements work together to create an effective message.",
+    },
+  ]
+  return (
+    <Container>
+      {data.map((item, i) => {
+        return (
+          <Wrapper key={i} id={i}>
+            <ImageWrapper>
+              <Image src={`${item.img}`} alt="" />
+            </ImageWrapper>
+            <Details>
+              <Head>{item.head}</Head>
+              <Para>{item.para}</Para>
+            </Details>
+          </Wrapper>
+        )
+      })}
+    </Container>
+  )
+}
+
+export default Card

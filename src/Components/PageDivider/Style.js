@@ -23,3 +23,10 @@ export const Para2 = styled.p`
   color: #333333;
   font-size: 24px;
 `
+export const Wrapper = styled.div`
+  width: 1080px;
+  margin: auto;
+  @media screen and (max-width: 1279px) {
+    width: 90%;
+  }
+`
