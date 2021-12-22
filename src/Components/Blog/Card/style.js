@@ -3,14 +3,15 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
+  align-items: start;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
   margin-top: 80px;
 `
 
 export const Wrapper = styled.div`
-  width: 311px;
+  width: 313px;
+  margin: 20px;
+
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `
@@ -31,9 +32,9 @@ export const Details = styled.div`
 `
 export const Heading = styled.p`
   font-weight: 700;
-  color: #353740;
   font-size: 22px;
   line-height: 1.4em;
+  color: #353740;
 `
 
 export const Date = styled.p`
