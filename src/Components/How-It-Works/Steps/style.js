@@ -26,10 +26,11 @@ export const Logo = styled.div`
 `
 
 export const Para = styled.p`
-  font-size: 18px;
-  line-height: 24px;
-  width: 500px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  width: 485px;
   text-align: center;
+  color: #939ca1;
   margin: 30px auto;
   @media screen and (max-width: 979px) {
     width: 85%;

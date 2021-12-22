@@ -1,5 +1,7 @@
 import React from "react"
 
-export default function NotFound() {
-  return <div>Error</div>
+const index = () => {
+  return <div>Not Found</div>
 }
+
+export default index

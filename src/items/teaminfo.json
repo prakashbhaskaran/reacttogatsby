@@ -1,0 +1,44 @@
+[
+  {
+    "img": "/team/team-ram.png",
+    "name": "Ram",
+    "position": "CEO & Co-founder",
+    "summary": "Ram believes in fundamental innovation to help users at scale, and at an affordable price point. He has 16+ years of experience in building software products and 6 years of running a business. He has 3 patents in Natural language processing and mobile tech.",
+    "color": "#1882D0"
+  },
+  {
+    "img": "/team/team-sona.png",
+    "name": "Sona",
+    "position": "Chief Design Officer & Co-founder",
+    "summary": "Sona is a designer turned entrepreneur. Over the last 10+ years, Sona has designed for multiple startups and MNCs in diverse sectors. She is an author of a popular design portal. Apart from digital products, she also designs educational games for kids.",
+    "color": "#8B5DC4"
+  },
+  {
+    "img": "/team/team-sisir.png",
+    "name": "Sisir",
+    "position": "Technical Lead",
+    "summary": "Sisir is a technical lead with extensive experience in backend and cloud technologies. An excellent programmer and an expert at software lifecycle management, Sisir is a rare breed who can be counted on to deliver the best results.",
+    "color": "#0EC2CB"
+  },
+  {
+    "img": "/team/team-dhruv.png",
+    "name": "Dhruv",
+    "position": "Data Science Lead",
+    "summary": "Dhruv is an experienced data scientist with experience in building a data science pipeline. He has expertise in interpreting data, performing analytics and visualization, and designing algorithms and models. An expert in Computer Vision and Image Processing problems.",
+    "color": "#8B5DC4"
+  },
+  {
+    "img": "/team/team-rahul.png",
+    "name": "Rahul",
+    "position": "Frontend Engineer",
+    "summary": "Rahul is a front-end web & mobile developer with strong experience in UI frameworks and Javascript. He cares about every pixel on the screen. He has a knack for making user experiences flawless and enjoyable.",
+    "color": "#0EC2CB"
+  },
+  {
+    "img": "/team/team-vicky.png",
+    "name": "Vicky",
+    "position": "Systems Programmer",
+    "summary": "Vicky is a systems engineer with expertise in crafting mathematical models and vector frameworks. He has strong fundamentals in algorithms, data structures, and computer systems. One of our rising stars at HelloSivi.",
+    "color": "#1882D0"
+  }
+]

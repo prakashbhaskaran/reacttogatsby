@@ -34,6 +34,9 @@ export const SubHeading = styled.p`
   width: 280px;
   text-align: center;
   margin: auto;
+  color: #939ca1;
+  font-size: 1.1em;
+  line-height: 1.6em;
   @media screen and (max-width: 979px) {
     width: 95%;
   }

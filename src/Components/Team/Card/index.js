@@ -2,38 +2,43 @@ import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import {
   Container,
-  Details,
-  Head,
+  Icons,
   Image,
   ImageWrapper,
-  Para,
+  Name,
+  Position,
+  Summary,
   Wrapper,
 } from "./style"
 
 const Card = () => {
   const data = useStaticQuery(graphql`
     {
-      allTourstepsinfoJson {
+      allTeaminfoJson {
         nodes {
-          para
-          head
           img
+          name
+          position
+          summary
+          color
         }
       }
     }
   `)
   return (
     <Container>
-      {data.allTourstepsinfoJson.nodes.map((item, i) => {
+      {data.allTeaminfoJson.nodes.map((item, i) => {
         return (
-          <Wrapper key={i} id={i}>
-            <ImageWrapper>
+          <Wrapper key={i}>
+            <ImageWrapper colors={item.color}>
               <Image src={`${item.img}`} alt="" />
             </ImageWrapper>
-            <Details>
-              <Head>{item.head}</Head>
-              <Para>{item.para}</Para>
-            </Details>
+            <Name>{item.name}</Name>
+            <Position>{item.position}</Position>
+
+            <Summary>{item.summary}</Summary>
+
+            <Icons></Icons>
           </Wrapper>
         )
       })}

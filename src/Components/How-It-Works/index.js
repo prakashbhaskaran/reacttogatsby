@@ -12,7 +12,7 @@ const HowItWorks = () => {
         <HeadAndSubHead
           head={"How It Works"}
           subhead={
-            "You and Sivi are the perfect team. Together, you can generate graphic much faster and at a much lower cost."
+            "You and Sivi are the perfect team. Together, you can generate graphics much faster and at a much lower cost."
           }
         />
       </Container>

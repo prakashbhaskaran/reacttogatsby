@@ -36,7 +36,8 @@ export const Details = styled.div``
 export const Head = styled.p`
   width: 440px;
   font-size: 36px;
-  line-height: 1.3em;
+  line-height: 1.7em;
+
   @media screen and (max-width: 979px) {
     width: 95%;
     margin: auto;
@@ -45,10 +46,10 @@ export const Head = styled.p`
 
 export const Para = styled.p`
   margin-top: 20px;
-
+  color: #939ca1;
   width: 480px;
   line-height: 1.6em;
-  font-size: 1.3em;
+  font-size: 1.2em;
   @media screen and (max-width: 979px) {
     width: 95%;
     margin: auto;

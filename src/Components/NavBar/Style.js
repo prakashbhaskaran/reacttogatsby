@@ -84,7 +84,7 @@ export const NavLink = styled(Link)`
   }
   @media screen and (max-width: 978px) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-    display: ${props => (props.id ? "initial" : "none")};
+    display: ${props => (props.id >= 0 ? "initial" : "none")};
 
     padding: 10px;
     :hover {
