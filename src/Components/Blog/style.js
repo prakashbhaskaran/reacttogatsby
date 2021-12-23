@@ -2,14 +2,20 @@ import styled from "styled-components"
 
 export const Entries = styled.div`
   text-align: ${props => (props.click ? "left" : "right")};
-  cursor: pointer;
+
   margin: 20px;
+`
+export const EntriesButton = styled.button`
+  outline: none;
+  border: hidden;
+  background: transparent;
+  cursor: pointer;
 `
 
 export const CardWrap = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: start;
 
-  margin-top: 80px;
+  margin: 80px 0 0;
+  flex-wrap: wrap;
 `

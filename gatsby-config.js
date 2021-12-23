@@ -16,5 +16,16 @@ module.exports = {
         path: `${__dirname}/src/items/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `500`, `700`],
+          },
+        ],
+      },
+    },
   ],
 }

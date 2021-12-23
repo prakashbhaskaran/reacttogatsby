@@ -1,26 +1,22 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-export const Container = styled.div`
-  border: 1px solid black;
-`
+export const Container = styled.div``
 
 export const Wrapper = styled.div`
   width: 313px;
   margin: 20px;
-
   border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* @media screen and (max-width: 1279px) {
-    width: 25%;
-  } */
+  box-shadow: 0px 2px 24px 0px rgb(53 55 64 / 10%);
+  @media screen and (max-width: 1080px) {
+    width: 280px;
+  }
 `
 
 export const ImageWrap = styled.div`
-  width: 311px;
+  width: 100%;
   height: 195px;
   @media screen and (max-width: 1279px) {
-    width: 100%;
   }
 `
 
@@ -38,6 +34,7 @@ export const Heading = styled.p`
   font-size: 22px;
   line-height: 1.4em;
   color: #353740;
+  font-family: "Montserrat", sans-serif;
 `
 
 export const Date = styled.p`
@@ -46,12 +43,14 @@ export const Date = styled.p`
   line-height: 1.7em;
   font-weight: 500;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 `
 
 export const Summary = styled.p`
   line-height: 1.8em;
   color: #747d88;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 `
 export const BlogLink = styled(Link)`
   color: initial;
