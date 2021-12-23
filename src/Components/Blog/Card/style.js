@@ -9,7 +9,13 @@ export const Wrapper = styled.div`
   border-radius: 10px;
   box-shadow: 0px 2px 24px 0px rgb(53 55 64 / 10%);
   @media screen and (max-width: 1080px) {
-    width: 280px;
+    width: 250px;
+  }
+  @media screen and (max-width: 978px) {
+    width: 240px;
+  }
+  @media screen and (max-width: 420px) {
+    width: auto;
   }
 `
 
@@ -17,6 +23,7 @@ export const ImageWrap = styled.div`
   width: 100%;
   height: 195px;
   @media screen and (max-width: 1279px) {
+    height: 100%;
   }
 `
 

@@ -16,6 +16,9 @@ export const CardWrap = styled.div`
   display: flex;
   align-items: start;
 
-  margin: 80px 0 0;
+  margin: 80px auto auto;
   flex-wrap: wrap;
+  @media screen and (max-width: 1080px) {
+    justify-content: space-around;
+  }
 `

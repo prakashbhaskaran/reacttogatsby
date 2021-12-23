@@ -18,7 +18,10 @@ const Team = () => {
           </CardWrapper>
         </Wrapper>
       </Container>
-      <PageDivider para1="Interested in a job with Hellosivi? We’d love to hear from you at jobs@hellosivi.com." />
+      <PageDivider
+        para1="Interested in a job with Hellosivi? We’d love to hear from you at "
+        strongtext="jobs@hellosivi.com."
+      />
       <Recognition />
     </>
   )

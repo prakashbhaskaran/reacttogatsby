@@ -12,21 +12,23 @@ export const Container = styled.div`
   line-height: 42px;
   padding: ${props => (!props.pad ? "60px 120px" : "60px 120px 90px 120px")};
   @media screen and (max-width: 768px) {
-    padding: 60px 45px;
+    padding: 60px 30px;
   }
 `
 export const Para1 = styled.p`
   color: #333333;
   font-size: 24px;
+  word-wrap: break-word;
 `
 export const Para2 = styled.p`
   color: #333333;
   font-size: 24px;
+  word-wrap: break-word;
 `
 export const Wrapper = styled.div`
   width: 1080px;
   margin: auto;
   @media screen and (max-width: 1279px) {
-    width: 90%;
+    width: 100%;
   }
 `

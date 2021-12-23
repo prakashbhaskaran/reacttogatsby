@@ -6,10 +6,17 @@ export const Container = styled.div`
   justify-content: center;
 
   gap: 50px;
+  @media screen and (max-width: 979px) {
+    flex-direction: column;
+  }
 `
 export const Wrapper = styled.div`
   width: 299px;
   padding: 50px 0;
+  @media screen and (max-width: 979px) {
+    width: 80%;
+    margin: auto;
+  }
 `
 
 export const ImageWrapper = styled.div`
@@ -17,10 +24,16 @@ export const ImageWrapper = styled.div`
   height: 299px;
   border: 1px solid ${props => props.colors};
   border-radius: 6px;
+
+  @media screen and (max-width: 979px) {
+    width: auto;
+    height: auto;
+  }
 `
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  display: block;
   border-radius: 6px;
 `
 export const Name = styled.p`
