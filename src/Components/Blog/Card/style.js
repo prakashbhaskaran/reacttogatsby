@@ -2,10 +2,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Container = styled.div`
-  display: flex;
-  align-items: start;
-  flex-wrap: wrap;
-  margin-top: 80px;
+  border: 1px solid black;
 `
 
 export const Wrapper = styled.div`
@@ -14,11 +11,17 @@ export const Wrapper = styled.div`
 
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* @media screen and (max-width: 1279px) {
+    width: 25%;
+  } */
 `
 
 export const ImageWrap = styled.div`
   width: 311px;
   height: 195px;
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
 `
 
 export const Image = styled.img`

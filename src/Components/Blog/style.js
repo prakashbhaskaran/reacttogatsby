@@ -3,9 +3,13 @@ import styled from "styled-components"
 export const Entries = styled.div`
   text-align: ${props => (props.click ? "left" : "right")};
   cursor: pointer;
-  margin-top: 20px;
+  margin: 20px;
 `
 
 export const CardWrap = styled.div`
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+
+  margin-top: 80px;
 `

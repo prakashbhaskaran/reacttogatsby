@@ -4,7 +4,22 @@ import { Entries, CardWrap } from "./style"
 import PageDivider from "../PageDivider/PageDivider"
 import Recognition from "../Home/Recognition/Recognition"
 import Card from "./Card"
+import { graphql, useStaticQuery } from "gatsby"
+
 const Blog = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allBloginfoJson {
+        nodes {
+          date
+          heading
+          img
+          summary
+          url
+        }
+      }
+    }
+  `)
   return (
     <>
       <Container>
@@ -14,7 +29,9 @@ const Blog = () => {
             Our thoughts and progress. Subscribe to know more about AI & design.
           </SubHeading>
           <CardWrap>
-            <Card />
+            {data.allBloginfoJson.nodes.map((item, i) => {
+              return <Card key={i} item={item} />
+            })}
           </CardWrap>
           <Entries click={true}>
             {true ? "New Entries >>" : "<< Old Entries"}
