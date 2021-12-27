@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import { Container, Heading, SubHeading, Wrapper } from "../Team/style"
-import { Entries, CardWrap, EntriesButton } from "./style"
+import { Heading, SubHeading } from "../Team/style"
+import { Container, Entries, CardWrap, EntriesButton, Wrapper } from "./style"
 import PageDivider from "../PageDivider/PageDivider"
 import Recognition from "../Home/Recognition/Recognition"
 import Card from "./Card"
